@@ -1,0 +1,39 @@
+*{
+ padding: 0;
+ margin: 0;   
+ box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    padding: 10px;
+    background-image: url('abc.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+    font-size: 100px;
+    color: #ffffff;
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 900;
+    position: relative;
+}
+
+h1::after{
+    content: '';
+    height: 6px;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 3px;
+    background-color: #ffffff;
+    transition: all ease 1s;
+}
